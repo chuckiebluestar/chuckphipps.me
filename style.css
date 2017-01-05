@@ -16,13 +16,7 @@ h1 {
  color: #6697cc !important; 
 }  /* I couldn't figure out how to make this work without !Important */
 
-.pHead  {
-  text-align: center;
-  color: white;
-  font-family: "Julius Sans One", sans-serif;
-  font-size: 100px;
-  letter-spacing: 20px;
-}
+
 .pPort {
  font-family: "Archivo Narrow", sans-serif !important; 
   font-size: 14px;
@@ -38,7 +32,7 @@ h1 {
   padding: 20%;
 }
 .headlineBox  {
-  height: 150px;
+  max-height: 200px;
   max-width: 1000px;
   margin: auto;
   background-color: #8cb1d9;
@@ -47,6 +41,13 @@ h1 {
   padding-top: 6px;
 }
 
+.pHead  {
+  text-align: center;
+  color: white;
+  font-family: "Julius Sans One", sans-serif;
+  font-size: 500%;
+  letter-spacing: 20px;
+}
 
 .samples section{
     text-align: center;
