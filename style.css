@@ -19,6 +19,7 @@ h1 {
  font-family: "Archivo Narrow", sans-serif !important; 
  color: #6697cc !important; 
 }  /* I couldn't figure out how to make this work without !Important */
+    /* It's because I have Bootstrap listed after my local CSS, so it takes precedence. */
 
 
 .pPort {
@@ -34,7 +35,7 @@ h1 {
   min-height: 100%;
   min-width: 100%;
   padding: 20%;
-  margin-top: -20px;
+  margin-top: -20px;    /* To eliminate the bottom margin in navbar*/
 }
 .headlineBox  {
   max-height: 200px;
@@ -50,8 +51,8 @@ h1 {
   text-align: center;
   color: white;
   font-family: "Julius Sans One", sans-serif;
-  font-size: 500%;
-  letter-spacing: 20px;
+  font-size: 5vw;                 /*  Finally found vw (viewport width) to be responsive  */
+  letter-spacing: 2vw;
 }
 
 .samples section{
