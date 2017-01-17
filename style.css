@@ -1,58 +1,103 @@
 .container-fluid  {
-  padding: 0 !important;
+    padding: 0 !important;
 } 
 
-.myLogo{
-  width: 110px;
-  margin-top: 15px;
-  margin-bottom: -30px;
-  border: 8px solid #b3cce6;
-  box-shadow: 4px 4px 15px #8383af;
+.myLogo {
+    width: 110px;
+    margin-top: 15px;
+    margin-bottom: -30px;
+    border: 8px solid #b3cce6;
+    box-shadow: 4px 4px 15px #8383af;
+}
+
+.myLogo:hover  {
+    border: 5px;
+    box-shadow: 8px 8px 20px #ffd24d;
 }
 
 h1 {
-  font-family: "Julius Sans One", sans-serif !important;
-	text-align: center;
+    font-family: "Julius Sans One", sans-serif !important;
+  	text-align: center;
 }
 
 .h2 {
- font-family: "Archivo Narrow", sans-serif !important; 
- color: #6697cc !important; 
+    font-family: "Archivo Narrow", sans-serif !important; 
+    color: #6697cc !important; 
 }  /* I couldn't figure out how to make this work without !Important */
     /* It's because I have Bootstrap listed after my local CSS, so it takes precedence. */
 
 
 .pPort {
- font-family: "Archivo Narrow", sans-serif !important; 
-  font-size: 14px;
+    font-family: "Archivo Narrow", sans-serif !important; 
+    font-size: 14px;
 }
 
 #mainpanel  {
-  background-image: url("http://i1042.photobucket.com/albums/b430/chuckphipps9/IMG_1614_zpsbefdurgz.jpg");
-  background-size: 100%;
-  background-repeat-x: no-repeat;
-  background-repeat-y: no-repeat;
-  min-height: 100%;
-  min-width: 100%;
-  padding: 20%;
-  margin-top: -20px;    /* To eliminate the bottom margin in navbar*/
+    background-image: url("http://i1042.photobucket.com/albums/b430/chuckphipps9/IMG_1614_zpsbefdurgz.jpg");
+    background-size: 100%;
+    background-repeat-x: no-repeat;
+    background-repeat-y: no-repeat;
+    min-height: 100%;
+    min-width: 100%;
+    padding: 20%;
+    margin-top: -20px;    /* To eliminate the bottom margin in navbar*/
 }
-.headlineBox  {
-  max-height: 200px;
-  max-width: 1000px;
-  margin: auto;
-  background-color: #8cb1d9;
-  float: center;
-  opacity: 0.8;
-  padding-top: 6px;
+
+/*@media screen and (min-width: 401px)  {  */
+    .headlineBox  {
+      max-height: 200px;
+      max-width: 1000px;
+      margin: auto;
+      background-color: #8cb1d9;
+      float: center;
+      opacity: 0.8;
+      padding-top: 6px;
+    }
+
+/*    ATTEMPTING TO CHANGE STYLES ON SMALL SCREEN   */
+@media screen and (max-width: 400px)  {
+    .headlineBox2 > .headlineBox {
+      /*max-height: 200px;*/
+      width: 100% !important;
+      /*margin: auto;*/
+      background-color: #8cb1d9;
+      /*float: center;*/
+      opacity: 0.8;
+      padding-top: 6px;
+    }
+    /* .pHead  {
+      text-align: center;
+      color: white;
+      font-family: "Julius Sans One", sans-serif;
+      font-size: 5vw;                
+      letter-spacing: 2vw;
+    } */
 }
 
 .pHead  {
-  text-align: center;
-  color: white;
-  font-family: "Julius Sans One", sans-serif;
-  font-size: 5vw;                 /*  Finally found vw (viewport width) to be responsive  */
-  letter-spacing: 2vw;
+    text-align: center;
+    color: white;
+    font-family: "Julius Sans One", sans-serif;
+    font-size: 5vw;                 /*  Finally found vw (viewport width) to be responsive  */
+    letter-spacing: 2vw;
+}
+
+.buttonLearnMore  {
+    margin: 6vh; 
+    border-radius: 4px;
+    color: #311D56;
+    letter-spacing: .3vw;
+    font-weight: bold;
+    background-color: #61D161;
+
+}
+
+.buttonLearnMore:hover  {
+    background-color: #ffd24d;
+}
+
+a {
+    text-decoration: none !important;
 }
 
 .samples section{
@@ -68,26 +113,39 @@ h1 {
     margin-bottom: 20px;
 }
 
+.myimage:hover  {
+    border: 5px;
+    box-shadow: 8px 8px 20px #ffd24d;
+}
+
 .mybiopix	{
-	width: 250px;
-	margin-top: 50px;
-	margin-left: auto;
-	margin-right: auto;
-	margin-bottom: 20px;
+  	width: 250px;
+  	margin-top: 50px;
+  	margin-left: auto;
+  	margin-right: auto;
+  	margin-bottom: 20px;
 }
 
 .bioBox {
-	min-height: 300px;
+  	min-height: 300px;
     max-width: 800px;
-	margin-right: auto;
-	margin-left: auto;
+  	margin-right: auto;
+  	margin-left: auto;
     margin-bottom: 20px;
     background-color: #c6e2ec;
     padding: 6px 20px;
 }
 
 .pBio	{
-	font-family: "Archivo Narrow", sans-serif !important; 
+  	font-family: "Archivo Narrow", sans-serif !important; 
     font-size: 20px;
-	text-align: center;
+  	text-align: center;
 }
+
+#LI_badge  {
+  display: flex;
+  justify-content: center;    /* Centering with FLEX-BOX */
+ 
+}
+
+
