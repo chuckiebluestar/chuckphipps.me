@@ -3,7 +3,7 @@
 .container-fluid  {
     padding: 0 !important;
 } 
-/*this is a comment shortcut*/
+
 .myLogo {
     width: 110px;
     margin-top: 15px;
@@ -159,10 +159,19 @@ a {
   	text-align: center;
 }
 
+.pBio a:hover  {
+    color:  #ffd24d;
+    font-size: 23px;
+}
+
 #LI_badge  {
   display: flex;
   justify-content: center;    /* Centering with FLEX-BOX */ 
   margin-bottom:  60px;
+}
+
+.LI-simple-link:hover  {
+    background-color: #ffd24d;
 }
 
 .footer  {
@@ -193,8 +202,7 @@ body {
   padding: 0px 5px 5px 5px;
   border-radius: 3px;
   /*color: #fff;*/
-  font-size: 15px;
-  
+  font-size: 15px; 
 }
 
 .fb-share-button:hover  {
