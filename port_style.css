@@ -25,8 +25,8 @@ h1 {
 .h2 {
     font-family: "Archivo Narrow", sans-serif !important; 
     color: #6697cc !important; 
-}  /* I couldn't figure out how to make this work without !Important */
-    /* It's because I have Bootstrap listed after my local CSS, so it takes precedence. */
+} 
+    /* Had to use important because I have Bootstrap listed after my local CSS, so it takes precedence. */
 
 
 .pPort {
@@ -37,10 +37,10 @@ h1 {
 #mainpanel  {
     background-image: url("portfolio_hero.jpg");
     background-size: 100%;
-    background-repeat-x: no-repeat;
-    background-repeat-y: no-repeat;
+    /*background-repeat-x: no-repeat;       /*fixed err. doesn't exist  */*/
+    /*background-repeat-y: no-repeat;       /*fixed err. doesn't exist  */*/
     min-height: 100%;
-    min-width: 100%;
+    max-height: 100%;
     padding: 20%;
     margin-top: -20px;    /* To eliminate the bottom margin in navbar*/
 }
@@ -51,7 +51,7 @@ h1 {
       max-width: 1000px;
       margin: auto;
       background-color: #8cb1d9;
-      float: center;
+      /*float: center;  */            /*fixed err. doesn't exist  */
       opacity: 0.8;
       padding-top: 6px;
     }
@@ -67,13 +67,6 @@ h1 {
       opacity: 0.8;
       padding-top: 6px;
     }
-    /* .pHead  {
-      text-align: center;
-      color: white;
-      font-family: "Julius Sans One", sans-serif;
-      font-size: 5vw;                
-      letter-spacing: 2vw;
-    } */
 }
 
 .pHead  {
@@ -96,21 +89,6 @@ h1 {
 
 .buttonLearnMore:hover  {
     background-color: #ffd24d;
-}
-
-
-/* Sweep To Right */
-.hvr-sweep-to-right {
-  display: inline-block;
-  vertical-align: middle;
-  -webkit-transform: perspective(1px) translateZ(0);
-  transform: perspective(1px) translateZ(0);
-  box-shadow: 0 0 1px transparent;
-  position: relative;
-  -webkit-transition-property: color;
-  transition-property: color;
-  -webkit-transition-duration: 0.3s;
-  transition-duration: 0.3s;
 }
 
 a {
@@ -175,6 +153,8 @@ a {
 }
 
 .footer  {
+  display: flex;
+  justify-content: space-around;
   position: absolute;
   padding: 15px;
   bottom: 0px;
@@ -192,16 +172,10 @@ body {
   margin-bottom: 60px;
 }
 
-.footer  {
-  display: flex;
-  justify-content: space-around;
-}
-
 .fb-share-button  {
   height: 25px;
   padding: 0px 5px 5px 5px;
   border-radius: 3px;
-  /*color: #fff;*/
   font-size: 15px; 
 }
 
