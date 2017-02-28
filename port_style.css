@@ -1,13 +1,10 @@
 /*PORTFOLIO stylesheet*/
 
-.container-fluid  {
-    padding: 0 !important;
-} 
 
 .myLogo {
     width: 110px;
-    margin-top: 15px;
-    margin-bottom: -30px;
+    /*margin-top: 3px;*/
+    /*margin-bottom: -10px;*/
     border: 8px solid #b3cce6;
     box-shadow: 4px 4px 15px #8383af;
 }
@@ -94,10 +91,11 @@ a {
     text-decoration: none !important;
 }
 
-.samples section{
+.samples div{
     text-align: center;
     margin-top: 30px;
 }
+
 
 .myimage  {
     width: 90%;

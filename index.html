@@ -35,8 +35,7 @@
       <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Julius+Sans+One">
       <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Archivo+Narrow">
       <link rel="stylesheet" type="text/css" href="port_style.css">
-      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" 
-       integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous"> 
+      <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 <!-- Google Analytics -->
       <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -63,23 +62,36 @@
   }(document, 'script', 'facebook-jssdk'));
       </script>																												 
 
+<header>
 <!-- Navbar -->
     <nav class="navbar navbar-default" role="navigation">
-      <div class="container">
-       <a href="#AboutChuck"><img src="logo_nerd_shot.jpg" class="myLogo img-circle" alt="Chuck Phipps, Web Developer"></a>  
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          
+          <a  href="#AboutChuck"><img src="logo_nerd_shot.jpg" class="myLogo img-circle" alt="Chuck Phipps, Web Developer"></a>  
+        </div>  <!-- End navbar-header -->
 
-        <ul class="nav navbar-nav navbar-right">
-          <li class="active"><a href="#mainpanel">Home</a></li>
-          <li><a href="#AboutChuck">About Chuck</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
-          <li><a href="blog.html">Blog</a></li>
-          <li><a href="#contact">Contact Info</a></li> 
-        </ul>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav navbar-right">
+            <li class="active"><a href="#mainpanel">Home</a></li>
+            <li><a href="#AboutChuck">About Chuck</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="#contact">Contact Info</a></li> 
+          </ul>
+        </div>
       </div>
     </nav>
+</header>
 
 <!-- Hero image -->
-    <div id="mainpanel">    <!--img="img-responsive" -->
+    <div id="mainpanel">   
         <div class="container-fluid">
             <div class="headlineBox">                                      
                 <p class="pHead">PORTFOLIO</p>
@@ -91,43 +103,41 @@
 <!-- Portfolio samples -->
     <div id="portfolio" class="samples container">
       <div class="row">
-
-          <section class="col-md-6">
+          <div class="col-xs-12 col-sm-12 col-lg-6">
               <h2 class="h2">Event Site</h2>
                 <a href="http://austinradfae.org" target="_blank"><img class="myimage" src="arf_gathering_hero.jpg" alt="Landing page for Austin Radical Faeries Gathering"></a>
                 <p class="pPort">A website for a non-profit group, which utilized a template from Website Builder.</p>         
-          </section>
+          </div>
 
-          <section class="col-md-6">
+          <div class="col-xs-12 col-sm-12 col-lg-6">
               <h2 class="h2">Delightful Products</h2>
                 <a href="" target="_blank"><img class="myimage" src="delite_prods_ss.jpg" alt="Landing page for delightful products"></a>
                 <p class="pPort">A practice project containing a little information about my favorite topic. </p>         
-          </section>
+          </div>
           
-          <section class="col-md-6">
+          <div class="col-xs-12 col-sm-12 col-lg-6">
               <h2 class="h2">Shopify Store</h2>
                 <a href="https://bluestar-bikes.myshopify.com/admin/themes/153631302/editor" target="_blank"><img class="myimage" src="bluestar_bikes_shopify.jpg" alt="Design for a Shopify store"></a>
                 <p class="pPort">Mockup for a basic Shopify online store using their templating tools.</p>         
-          </section>
+          </div>
           
-          <section class="col-md-6">
+          <div class="col-xs-12 col-sm-12 col-lg-6">
               <h2 class="h2">Site Re-Design</h2>
                 <a href="https://collaborate.uxpin.com/960a7c07d083e32e561aa355b3c26f9d5e138c07#/pages/63586492" target="_blank"><img class="myimage" src="tursus_landing_page.jpg" alt="Tursus Software site re-design"></a>
                 <p class="pPort">Design for the refresh of a WordPress site.</p>         
-          </section>
+          </div>
           
-          <section class="col-md-6">
+          <div class="col-xs-12 col-sm-12 col-lg-6">
               <h2 class="h2">Tribute to Jony Ive</h2>
                 <a href="http://codepen.io/chuckPhipps/full/NxQzxq/" target="_blank"> <img class="myimage" src="jony_ive_ss.jpg" alt="Code Pen project"></a>
                 <p class="pPort">A CodePen project to pay homage to one of the world's great designers.</p>   
-          </section>
+          </div>
           
-          <section class="col-md-6">
+          <div class="col-xs-12 col-sm-12 col-lg-6">
               <h2 class="h2">Promotional Video</h2>
                 <a href="https://www.youtube.com/watch?v=A5u3vGliLts&feature=em-upload_owner#action=share" target="_blank"><img class="myimage" src="clover_at_fatsals_play_vid.jpg" alt="Tursus Software site re-design"></a>
                 <p class="pPort">I wrote, storyboarded, shot and edited this short video for a software startup.</p>         
-          </section>                         
-        
+          </div>                      
   	   </div>       
      </div>
 
@@ -165,6 +175,11 @@
       <a  href="https://github.com/chuckiebluestar" target="_blank">
           <img src="github.png" alt="Github"></a>         
 </footer>
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Bootstrap's JavaScript plugins -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
 </body>
 
