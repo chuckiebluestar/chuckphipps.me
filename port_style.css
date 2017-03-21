@@ -4,7 +4,8 @@
 .myLogo {
     width: 110px;
     /*margin-top: 3px;*/
-    /*margin-bottom: -10px;*/
+    margin-bottom: -10px;
+    margin-left: 25px;
     border: 8px solid #b3cce6;
     box-shadow: 4px 4px 15px #8383af;
 }
@@ -183,3 +184,58 @@ body {
     background-color: #ffd24d;
 }
 
+/*  BLOG STYLING  -------------------------*/
+.hero  {
+    height: 400px;
+    width: 100%;
+    background: url('BlueStar_bikes_splash.jpg') center no-repeat #00334d;
+}
+
+content  {
+    display: block;
+    overflow: hidden;
+    padding: 30px;
+}
+
+main {
+    float: left;
+    width: 70%;
+}
+
+aside  {
+    float: right;
+    margin-right: 20px;
+}
+
+aside .side_section  {
+    background-color: #ddae31;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+aside .side_section h3  {
+    background-color: #d13d3d;
+    color: #ddae31;
+    text-align: center;
+    padding: 5px 15px 5px 15px;
+}
+
+aside .side_section ul  {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+article  {
+    margin-bottom: 50px;    
+}
+
+article h2 {
+    margin: 0;
+    color: #333;
+    padding: 0;
+}
+
+article p  {
+  font-size: 1.25em;
+}
