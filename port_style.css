@@ -171,6 +171,7 @@ html {
 body {
   /* Margin bottom by footer height */
   margin-bottom: 60px;
+  padding-bottom: 60px;
 }
 
 .fb-share-button  {
@@ -186,35 +187,46 @@ body {
 
 /*  BLOG STYLING  -------------------------*/
 .hero  {
-    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
     width: 100%;
-    background: url('BlueStar_bikes_splash.jpg') center no-repeat #00334d;
+    background: url('BlueStar_bikes_splash.jpg') center no-repeat #c6e2ec;
+/*    opacity: 0.8;*/
+    margin-top: -20px;    /* To eliminate the bottom margin in navbar*/
+}
+
+.hero h1 {
+    font-family: "Julius Sans One", sans-serif !important;
+    font-size: 4em;
+    color: #000;
+    text-align: center;
 }
 
 content  {
-    display: block;
-    overflow: hidden;
+    display: row;
+    /*overflow: hidden;*/
     padding: 30px;
 }
 
 main {
-    float: left;
-    width: 70%;
+    margin: 30px 20px 30px 30px;
+    padding: 5px 20px 5px 5px;
 }
 
 aside  {
-    float: right;
-    margin-right: 20px;
+    margin: 30px 20px 30px 10px;
 }
 
 aside .side_section  {
-    background-color: #ddae31;
+    background-color: #ECE3C6;
     padding: 10px;
     box-sizing: border-box;
 }
 
 aside .side_section h3  {
-    background-color: #d13d3d;
+    background-color: #f5f5f5;
     color: #ddae31;
     text-align: center;
     padding: 5px 15px 5px 15px;
@@ -222,8 +234,7 @@ aside .side_section h3  {
 
 aside .side_section ul  {
     list-style: none;
-    margin: 0;
-    padding: 0;
+    padding: 10px;
 }
 
 article  {
@@ -232,10 +243,15 @@ article  {
 
 article h2 {
     margin: 0;
-    color: #333;
+    color: #666;
     padding: 0;
 }
 
 article p  {
   font-size: 1.25em;
+  font-family: serif;
+  line-height: 25px;
 }
+
+
+
