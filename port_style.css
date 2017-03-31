@@ -208,6 +208,7 @@ content  {
     display: row;
     /*overflow: hidden;*/
     padding: 30px;
+    margin-bottom: 60px;
 }
 
 main {
@@ -253,5 +254,10 @@ article p  {
   line-height: 25px;
 }
 
+article p a {
+  text-decoration-color: blue !important;
+}
 
-
+article p a:hover {
+  color: red !important;
+}
