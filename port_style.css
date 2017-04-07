@@ -190,10 +190,9 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 200px;
+    height: 175px;
     width: 100%;
-    background: url('BlueStar_bikes_splash.jpg') center no-repeat #c6e2ec;
-/*    opacity: 0.8;*/
+    background: linear-gradient(#9fcedf, #c6e2ec, #d9ebf2, #c6e2ec, #9fcedf);
     margin-top: -20px;    /* To eliminate the bottom margin in navbar*/
 }
 
@@ -248,7 +247,7 @@ article h2 {
     padding: 0;
 }
 
-article p  {
+article p {
   font-size: 1.25em;
   font-family: serif;
   line-height: 25px;
