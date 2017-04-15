@@ -238,7 +238,8 @@ aside .side_section ul  {
 }
 
 article  {
-    margin-bottom: 50px;    
+    margin-bottom: 50px;
+    margin-right: 6px;    
 }
 
 article h2 {
@@ -251,6 +252,7 @@ article p {
   font-size: 1.25em;
   font-family: serif;
   line-height: 25px;
+
 }
 
 article p a {
@@ -260,3 +262,85 @@ article p a {
 article p a:hover {
   color: red !important;
 }
+
+span.quote {
+    font-family: Georgia;
+    font-size: 22px;
+    display: block;
+    margin: 14px 0 0 0;
+    font-style: italic;
+}
+span.quote:before {
+    content: "“";
+    font-size: 30px;
+    color: #999;
+    line-height: 0;
+    display: inline-block;
+    margin: 0 6px 0 0;
+}
+span.quote:after {
+    content: " ”";
+    font-size: 30px;
+    color: #999;
+    line-height: 0;
+    display: inline-block;
+    margin: 0 6px 0 4px;
+}
+
+/*CONTACT Styling -----------------*/
+.wrap  {
+    margin: 0 auto;
+    max-width: 500px;
+    padding: 15px;
+    background-color: #fff;
+}
+
+.wrap h1 {
+    font-family: "Julius Sans One", sans-serif !important;
+    font-size: 4em;
+    text-align: center;
+}
+
+.fieldset  {
+    margin: 0 auto;    
+    max-width: 450px;
+    padding: 15px;
+}
+
+.fieldWidth  {
+    width: 100%;
+}
+
+input  {
+    font-size: 1em;
+    color: blue;
+}
+
+input[type="radio"]  {
+    margin-left: 20px;  /*Use LEFT with button>label. Use RIGHT with label>button.*/ 
+    font-size: .5em;
+}
+
+input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+legend  {
+    padding: 7px;
+    background-color: #d9ebf2;
+    text-align: center;
+}
+
+.reset  {            /* reset button */
+    float: left;    
+}
+
+.submit  {           /* submit button */
+    float: right;
+    border-radius: 3px;
+    color: #311D56;
+    letter-spacing: .3vw;
+    font-weight: bold;
+    background-color: #61D161;  
+}
+
