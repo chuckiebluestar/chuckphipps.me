@@ -16,6 +16,14 @@
     box-shadow: 8px 8px 20px #ffd24d;
 }
 
+.myLogoName  {
+  display: inline-block;
+  margin-left: 25px;
+  color: #1807ab;
+  letter-spacing: .3vw;
+  font-weight: bold;
+}
+
 h1 {
     font-family: "Julius Sans One", sans-serif !important;
   	text-align: center;
