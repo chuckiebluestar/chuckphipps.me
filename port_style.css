@@ -1,5 +1,15 @@
 /*PORTFOLIO stylesheet*/
 
+section  {
+  opacity: 0;
+  transform: translate(0, 30px);
+  transition: all 1.5s;
+}
+
+section.visible  {
+  opacity: 1;
+  transform: translate(0, 0);
+}
 
 .myLogo {
     width: 110px;
@@ -66,16 +76,20 @@ h1 {
       padding-top: 6px;
     }
 
-/*    ATTEMPTING TO CHANGE STYLES ON SMALL SCREEN   */
-@media screen and (max-width: 400px)  {
-    .headlineBox2 > .headlineBox {
-      /*max-height: 200px;*/
-      width: 100% !important;
-      /*margin: auto;*/
+/*    ATTEMPTING TO CHANGE STYLES ON SMALL SCREEN   .headlineBox2 > */
+@media only screen 
+  and (max-device-width: 400px)  {
+    .headlineBox {
+      max-height: 200px;
+      width: 100vw;
+      margin: auto;
       background-color: #8cb1d9;
       /*float: center;*/
       opacity: 0.8;
       padding-top: 6px;
+    }
+    .pHead  {
+      font-size: 15vw;
     }
 }
 
@@ -89,7 +103,9 @@ h1 {
 
 .buttonLearnMore  {
     margin: 6vh; 
-    border-radius: 4px;
+    height: 40px;
+    border: 0px;
+    border-radius: 20px;
     color: #311D56;
     letter-spacing: .3vw;
     font-weight: bold;
@@ -141,7 +157,7 @@ a {
   	margin-right: auto;
   	margin-left: auto;
     margin-bottom: 20px;
-    background-color: #c6e2ec;
+    background: linear-gradient(#9fcedf, #c6e2ec, #d9ebf2, #c6e2ec, #9fcedf);
     padding: 20px 20px;
 }
 
